@@ -28,8 +28,6 @@ function SignIn() {
     try {
       const auth = getAuth();
 
-      console.log(auth);
-
       const userCredential = await signInWithEmailAndPassword(
         auth,
         email,
