@@ -35,7 +35,9 @@ function SignIn() {
         password
       );
       if (userCredential.user) {
-        navigate("/");
+        toast.success("All right!");
+        setTimeout(() => navigate("/"), 5000);
+        // navigate("/");
       }
     } catch (error) {
       toast.error("Bad User Credentials");
